@@ -1,0 +1,1075 @@
+/*
+
+Xilinx Vivado v2018.2 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2258646 on Thu Jun 14 20:03:12 MDT 2018
+IP Build: 2256618 on Thu Jun 14 22:10:49 MDT 2018
+
+Process ID: 13064
+License: Customer
+
+Current time: 	Fri Apr 29 12:29:08 IST 2022
+Time zone: 	India Standard Time (Asia/Calcutta)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1536x864
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 6 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	D:/xilinx1/Vivado/2018.2/tps/win64/jre
+Java executable location: 	D:/xilinx1/Vivado/2018.2/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	SANJU
+User home directory: C:/Users/SANJU
+User working directory: C:/Users/SANJU/Desktop/smart_light
+User country: 	IN
+User language: 	en
+User locale: 	en_IN
+
+RDI_BASEROOT: D:/xilinx1/Vivado
+HDI_APPROOT: D:/xilinx1/Vivado/2018.2
+RDI_DATADIR: D:/xilinx1/Vivado/2018.2/data
+RDI_BINDIR: D:/xilinx1/Vivado/2018.2/bin
+
+Vivado preferences file location: C:/Users/SANJU/AppData/Roaming/Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: C:/Users/SANJU/AppData/Roaming/Xilinx/Vivado/2018.2/
+Vivado layouts directory: C:/Users/SANJU/AppData/Roaming/Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	D:/xilinx1/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/SANJU/Desktop/smart_light/vivado.log
+Vivado journal file location: 	C:/Users/SANJU/Desktop/smart_light/vivado.jou
+Engine tmp dir: 	C:/Users/SANJU/Desktop/smart_light/.Xil/Vivado-13064-DESKTOP-VJS2AA7
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/xilinx1/Vivado/2018.2/ids_lite/ISE
+XILINXD_LICENSE_FILE: C:\Users\SANJU\Desktop\2-1\DD\DD LAB\SOFTWARE
+XILINX_DSP: D:/xilinx1/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: D:/xilinx1/Vivado/2018.2
+XILINX_SDK: D:/xilinx1/SDK/2018.2
+XILINX_VIVADO: D:/xilinx1/Vivado/2018.2
+XILINX_VIVADO_HLS: D:/xilinx1/Vivado/2018.2
+
+
+GUI allocated memory:	147 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 540 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 55 MB (+55538kb) [00:00:19]
+// [Engine Memory]: 490 MB (+361843kb) [00:00:19]
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: C:\Users\SANJU\Desktop\smart_light\smart_light.xpr. Version: Vivado v2018.2 
+// bx (ck):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/SANJU/Desktop/smart_light/smart_light.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking 832ms to process. Increasing delay to 4000 ms.
+// [GUI Memory]: 72 MB (+14725kb) [00:00:23]
+// [Engine Memory]: 547 MB (+34883kb) [00:00:23]
+// HMemoryUtils.trashcanNow. Engine heap size: 547 MB. GUI used memory: 34 MB. Current time: 4/29/22 12:29:11 PM IST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 583 MB (+9027kb) [00:00:28]
+// Tcl Message: open_project C:/Users/SANJU/Desktop/smart_light/smart_light.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'D:/Academics/Sem 3-1/FPGA/project/smart_light' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/xilinx1/Vivado/2018.2/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:11 . Memory (MB): peak = 774.898 ; gain = 82.969 
+// Project name: smart_light; location: C:/Users/SANJU/Desktop/smart_light; part: xc7z020clg484-1
+// [Engine Memory]: 614 MB (+1332kb) [00:00:32]
+dismissDialog("Open Project"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 50 seconds
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21); // u (O, ck)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21); // u (O, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// HMemoryUtils.trashcanNow. Engine heap size: 618 MB. GUI used memory: 41 MB. Current time: 4/29/22 12:30:16 PM IST
+// 'cv' command handler elapsed time: 3 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 22, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 22, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bx (ck):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+dismissDialog("Open Hardware Manager"); // bx (ck)
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// bx (ck):  Auto Connect : addNotify
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248685779 
+// [Engine Memory]: 652 MB (+8054kb) [00:01:47]
+// HMemoryUtils.trashcanNow. Engine heap size: 652 MB. GUI used memory: 43 MB. Current time: 4/29/22 12:30:36 PM IST
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1440.887 ; gain = 643.887 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/SANJU/Desktop/smart_light/smart_light.runs/impl_1/smart_light_module.bit} [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {C:/Users/SANJU/Desktop/smart_light/smart_light.runs/impl_1/smart_light_module.ltx} [get_hw_devices xc7z020_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {C:/Users/SANJU/Desktop/smart_light/smart_light.runs/impl_1/smart_light_module.ltx} [get_hw_devices xc7z020_1] 
+// Tcl Message: current_hw_device [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// [Engine Memory]: 1,297 MB (+641470kb) [00:01:54]
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 VIO core(s). 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// [GUI Memory]: 77 MB (+1129kb) [00:01:54]
+dismissDialog("Auto Connect"); // bx (ck)
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+selectButton(PAResourceTtoZ.VioProbesTreeTablePanel_ADD_PROBE, "VioProbeTablePanel_new"); // B (f, ck)
+// Add Probes: show
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, hw_vio_1, light_on_OBUF[0:0]]", 8, false); // N (O, ResizableWindow)
+selectButton(PAResourceTtoZ.VioProbesTreeTablePanel_OK, "OK"); // a (C, ResizableWindow)
+// Add Probes: hide
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// [GUI Memory]: 82 MB (+1054kb) [00:02:45]
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,312 MB. GUI used memory: 50 MB. Current time: 4/29/22 1:00:36 PM IST
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 428514 ms. Increasing delay to 3000 ms.
+// WARNING: updateGUI() is taking  4457 ms.
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_OBJECT_DELETE
+// Elapsed time: 2359 seconds
+closeView(PAResourceOtoP.PAViews_DASHBOARD, "hw_vios"); // i
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248685779 
+// TclEventType: HW_SERVER_UPDATE
+// n (ck): Close Hardware Target: addNotify
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// [GUI Memory]: 94 MB (+8586kb) [00:41:35]
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// Elapsed time: 73 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (ck)
+// Elapsed time: 590 seconds
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "current_light_intensity[7:0] ; [U] 16 ; HARDWARE_VIO_ACTIVITY_BOTH ; Input ; hw_vio_1", 0, "[U] 16", 1, true); // g (O, ck) - Node
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "current_light_intensity[7:0] ; [U] 14 ; HARDWARE_VIO_ACTIVITY_BOTH ; Input ; hw_vio_1", 0, "[U] 14", 1, true, false, false, false, true, false); // g (O, ck) - Popup Trigger - Node
+selectMenu(PAResourceItoN.LabtoolsMenu_RADIX, "Radix"); // aa (aj, ck)
+selectMenu(PAResourceItoN.LabtoolsMenu_RADIX, "Radix"); // aa (aj, ck)
+selectMenu(PAResourceItoN.LabtoolsMenu_ACTIVITY_PERSISTENCE, "Activity Persistence"); // aa (aj, ck)
+selectMenu(PAResourceItoN.LabtoolsMenu_NAME, "Name"); // aa (aj, ck)
+selectMenu(PAResourceItoN.LabtoolsMenu_ACTIVITY_PERSISTENCE, "Activity Persistence"); // aa (aj, ck)
+selectMenu(PAResourceItoN.LabtoolsMenu_RADIX, "Radix"); // aa (aj, ck)
+selectMenu(PAResourceItoN.LabtoolsMenu_ACTIVITY_PERSISTENCE, "Activity Persistence"); // aa (aj, ck)
+selectMenu(PAResourceItoN.LabtoolsMenu_RADIX, "Radix"); // aa (aj, ck)
+selectMenu(PAResourceItoN.LabtoolsMenu_ACTIVITY_PERSISTENCE, "Activity Persistence"); // aa (aj, ck)
+selectMenu(PAResourceItoN.LabtoolsMenu_NAME, "Name"); // aa (aj, ck)
+// Elapsed time: 355 seconds
+setText("RDIResource.SearchCommandComponent_QUICK_ACCESS", "sou", true); // OverlayTextField (J, ck)
+// Run Command: PAResourceCommand.PACommandNames_FILESET_WINDOW
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, smart_light_module (smart_light_module.v)]", 1); // B (D, ck)
+// PAPropertyPanels.initPanels (clk_div.v) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, smart_light_module (smart_light_module.v), clkDiv1 : clk_div (clk_div.v)]", 2, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, smart_light_module (smart_light_module.v), edge4 : edge_detector (edge_detector.v)]", 3, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, smart_light_module (smart_light_module.v), edge4 : edge_detector (edge_detector.v)]", 3, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, smart_light_module (smart_light_module.v), edge4 : edge_detector (edge_detector.v)]", 3, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, smart_light_module (smart_light_module.v), edge4 : edge_detector (edge_detector.v)]", 3, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, smart_light_module (smart_light_module.v), edge4 : edge_detector (edge_detector.v)]", 3, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, smart_light_module (smart_light_module.v), edge4 : edge_detector (edge_detector.v)]", 3, false); // B (D, ck)
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, smart_light_module (smart_light_module.v), spi2 : spi_module (spi_module.v)]", 4, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, smart_light_module (smart_light_module.v), spi2 : spi_module (spi_module.v)]", 4, false, false, false, false, false, true); // B (D, ck) - Double Click
+// Elapsed time: 11 seconds
+selectCodeEditor("spi_module.v", 186, 102); // ce (w, ck)
+// Elapsed time: 16 seconds
+selectCodeEditor("spi_module.v", 184, 82); // ce (w, ck)
+selectCodeEditor("spi_module.v", 184, 82, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("spi_module.v", 114, 20); // ce (w, ck)
+selectCodeEditor("spi_module.v", 114, 20, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("spi_module.v", 153, 26); // ce (w, ck)
+selectCodeEditor("spi_module.v", 153, 26, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("spi_module.v", 176, 84); // ce (w, ck)
+selectCodeEditor("spi_module.v", 176, 84, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("spi_module.v", 138, 129); // ce (w, ck)
+selectCodeEditor("spi_module.v", 22, 73); // ce (w, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, smart_light_module (smart_light_module.v), clkDiv1 : clk_div (clk_div.v)]", 2, false); // B (D, ck)
+// [GUI Memory]: 99 MB (+106kb) [00:59:48]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, smart_light_module (smart_light_module.v), clkDiv1 : clk_div (clk_div.v)]", 2, false, false, false, false, false, true); // B (D, ck) - Double Click
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, smart_light_module (smart_light_module.v), edge4 : edge_detector (edge_detector.v)]", 3, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, smart_light_module (smart_light_module.v), edge4 : edge_detector (edge_detector.v)]", 3, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, smart_light_module (smart_light_module.v), edge4 : edge_detector (edge_detector.v)]", 3, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, smart_light_module (smart_light_module.v), edge4 : edge_detector (edge_detector.v)]", 3, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, smart_light_module (smart_light_module.v)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, smart_light_module (smart_light_module.v)]", 1, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectCodeEditor("smart_light_module.v", 19, 57); // ce (w, ck)
+selectCodeEditor("smart_light_module.v", 26, 43); // ce (w, ck)
+selectCodeEditor("smart_light_module.v", 189, 62); // ce (w, ck)
+selectCodeEditor("smart_light_module.v", 284, 206); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spi_module.v", 2); // k (j, ck)
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+selectCodeEditor("spi_module.v", 266, 87); // ce (w, ck)
+selectCodeEditor("spi_module.v", 265, 118); // ce (w, ck)
+selectCodeEditor("spi_module.v", 174, 165); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("spi_module.v", 165, 222); // ce (w, ck)
+selectCodeEditor("spi_module.v", 166, 222); // ce (w, ck)
+selectCodeEditor("spi_module.v", 170, 214); // ce (w, ck)
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_MODIFY
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// 'cv' command handler elapsed time: 4 seconds
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// bx (ck):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Apr 29 13:29:35 2022] Launched synth_1... Run output will be captured here: C:/Users/SANJU/Desktop/smart_light/smart_light.runs/synth_1/runme.log [Fri Apr 29 13:29:35 2022] Launched impl_1... Run output will be captured here: C:/Users/SANJU/Desktop/smart_light/smart_light.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,312 MB. GUI used memory: 53 MB. Current time: 4/29/22 1:30:41 PM IST
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 1069ms to process. Increasing delay to 2000 ms.
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 280 seconds
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (ay, ck)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// A (ck): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+dismissDialog("Confirm Close"); // A (ck)
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+closeView(PAResourceOtoP.PAViews_DASHBOARD, "hw_vios"); // i
+// TclEventType: HW_TARGET_CLOSE
+// bx (ck):  CLose Hardware Manager : addNotify
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: close_hw 
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_SESSION_CLOSE
+dismissDialog("CLose Hardware Manager"); // bx (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 22, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ad (aj, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// bx (ck):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+dismissDialog("Open Hardware Manager"); // bx (ck)
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// bx (ck):  Auto Connect : addNotify
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248685779 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/SANJU/Desktop/smart_light/smart_light.runs/impl_1/smart_light_module.bit} [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {C:/Users/SANJU/Desktop/smart_light/smart_light.runs/impl_1/smart_light_module.ltx} [get_hw_devices xc7z020_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {C:/Users/SANJU/Desktop/smart_light/smart_light.runs/impl_1/smart_light_module.ltx} [get_hw_devices xc7z020_1] 
+// Tcl Message: current_hw_device [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 VIO core(s). 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// [GUI Memory]: 110 MB (+6872kb) [01:05:46]
+dismissDialog("Auto Connect"); // bx (ck)
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// Elapsed time: 111 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V (q, ck)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // aa (ck)
+selectMenuItem(PAResourceCommand.PACommandNames_NEW_PROJECT, "New..."); // ad (ck)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V (q, ck)
+// Run Command: PAResourceCommand.PACommandNames_NEW_PROJECT
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// f (ck): New Project: addNotify
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// 'g' command handler elapsed time: 4 seconds
+dismissDialog("New Project"); // f (ck)
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// Elapsed time: 84 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "smart_light_module.v", 3); // k (j, ck)
+// Elapsed time: 13 seconds
+setText("RDIResource.SearchCommandComponent_QUICK_ACCESS", "Sources", true); // OverlayTextField (J, ck)
+// Run Command: PAResourceCommand.PACommandNames_FILESET_WINDOW
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, smart_light_module (smart_light_module.v)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, smart_light_module (smart_light_module.v), clkDiv1 : clk_div (clk_div.v)]", 2, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("smart_light_module.v", 103, 141); // ce (w, ck)
+// Elapsed time: 11 seconds
+selectCodeEditor("smart_light_module.v", 314, 149); // ce (w, ck)
+selectCodeEditor("smart_light_module.v", 314, 149, false, false, false, false, true); // ce (w, ck) - Double Click
+// [GUI Memory]: 117 MB (+769kb) [01:10:58]
+// Elapsed time: 463 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// Elapsed time: 11 seconds
+selectCodeEditor("smart_light_module.v", 427, 164); // ce (w, ck)
+selectCodeEditor("smart_light_module.v", 50, 96); // ce (w, ck)
+// Elapsed time: 16 seconds
+selectCodeEditor("smart_light_module.v", 221, 204); // ce (w, ck)
+selectCodeEditor("smart_light_module.v", 221, 204, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("smart_light_module.v", 427, 147); // ce (w, ck)
+selectCodeEditor("smart_light_module.v", 427, 147); // ce (w, ck)
+selectCodeEditor("smart_light_module.v", 320, 157); // ce (w, ck)
+selectCodeEditor("smart_light_module.v", 239, 142); // ce (w, ck)
+selectCodeEditor("smart_light_module.v", 239, 142, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "smart_light_module.v", 'c'); // ce (w, ck)
+selectCodeEditor("smart_light_module.v", 426, 147); // ce (w, ck)
+selectCodeEditor("smart_light_module.v", 103, 143); // ce (w, ck)
+// Elapsed time: 50 seconds
+typeControlKey((HResource) null, "smart_light_module.v", 'v'); // ce (w, ck)
+// Elapsed time: 44 seconds
+selectCodeEditor("smart_light_module.v", 87, 99); // ce (w, ck)
+// Elapsed time: 13 seconds
+selectCodeEditor("smart_light_module.v", 214, 143); // ce (w, ck)
+// Elapsed time: 16 seconds
+selectCodeEditor("smart_light_module.v", 105, 191); // ce (w, ck)
+selectCodeEditor("smart_light_module.v", 105, 191, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "smart_light_module.v", 'c'); // ce (w, ck)
+selectCodeEditor("smart_light_module.v", 97, 107); // ce (w, ck)
+typeControlKey((HResource) null, "smart_light_module.v", 'v'); // ce (w, ck)
+// Elapsed time: 31 seconds
+selectCodeEditor("smart_light_module.v", 71, 95); // ce (w, ck)
+// Elapsed time: 22 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// Elapsed time: 16 seconds
+selectCodeEditor("smart_light_module.v", 68, 129); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("smart_light_module.v", 145, 76); // ce (w, ck)
+// Elapsed time: 15 seconds
+selectCodeEditor("smart_light_module.v", 214, 99); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("smart_light_module.v", 201, 62); // ce (w, ck)
+selectCodeEditor("smart_light_module.v", 201, 62); // ce (w, ck)
+// Elapsed time: 12 seconds
+selectCodeEditor("smart_light_module.v", 282, 60); // ce (w, ck)
+// Elapsed time: 13 seconds
+selectCodeEditor("smart_light_module.v", 105, 43); // ce (w, ck)
+typeControlKey((HResource) null, "smart_light_module.v", 'c'); // ce (w, ck)
+selectCodeEditor("smart_light_module.v", 138, 79); // ce (w, ck)
+typeControlKey((HResource) null, "smart_light_module.v", 'v'); // ce (w, ck)
+selectCodeEditor("smart_light_module.v", 343, 77); // ce (w, ck)
+selectCodeEditor("smart_light_module.v", 570, 72); // ce (w, ck)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// Elapsed time: 22 seconds
+selectCodeEditor("smart_light_module.v", 270, 65); // ce (w, ck)
+// Elapsed time: 11 seconds
+typeControlKey((HResource) null, "smart_light_module.v", 'c'); // ce (w, ck)
+selectCodeEditor("smart_light_module.v", 113, 92); // ce (w, ck)
+selectCodeEditor("smart_light_module.v", 113, 92); // ce (w, ck)
+typeControlKey((HResource) null, "smart_light_module.v", 'v'); // ce (w, ck)
+// Elapsed time: 38 seconds
+selectCodeEditor("smart_light_module.v", 250, 147); // ce (w, ck)
+selectCodeEditor("smart_light_module.v", 279, 153); // ce (w, ck)
+selectCodeEditor("smart_light_module.v", 81, 125); // ce (w, ck)
+typeControlKey((HResource) null, "smart_light_module.v", 'c'); // ce (w, ck)
+selectCodeEditor("smart_light_module.v", 143, 167); // ce (w, ck)
+typeControlKey((HResource) null, "smart_light_module.v", 'v'); // ce (w, ck)
+typeControlKey(null, null, 'z');
+// Elapsed time: 21 seconds
+selectCodeEditor("smart_light_module.v", 376, 175); // ce (w, ck)
+typeControlKey((HResource) null, "smart_light_module.v", 'v'); // ce (w, ck)
+selectCodeEditor("smart_light_module.v", 353, 199); // ce (w, ck)
+// Elapsed time: 16 seconds
+selectCodeEditor("smart_light_module.v", 486, 217); // ce (w, ck)
+// Elapsed time: 13 seconds
+typeControlKey((HResource) null, "smart_light_module.v", 'v'); // ce (w, ck)
+selectCodeEditor("smart_light_module.v", 355, 212); // ce (w, ck)
+// Elapsed time: 31 seconds
+typeControlKey((HResource) null, "smart_light_module.v", 'v'); // ce (w, ck)
+selectCodeEditor("smart_light_module.v", 355, 215); // ce (w, ck)
+// Elapsed time: 35 seconds
+typeControlKey((HResource) null, "smart_light_module.v", 'v'); // ce (w, ck)
+selectCodeEditor("smart_light_module.v", 356, 212); // ce (w, ck)
+// [GUI Memory]: 124 MB (+1214kb) [01:27:52]
+// Elapsed time: 35 seconds
+typeControlKey((HResource) null, "smart_light_module.v", 'v'); // ce (w, ck)
+// Elapsed time: 46 seconds
+selectCodeEditor("smart_light_module.v", 197, 78); // ce (w, ck)
+// Elapsed time: 13 seconds
+selectCodeEditor("smart_light_module.v", 195, 75); // ce (w, ck)
+selectCodeEditor("smart_light_module.v", 195, 75); // ce (w, ck)
+// Elapsed time: 48 seconds
+selectCodeEditor("smart_light_module.v", 347, 131); // ce (w, ck)
+// Elapsed time: 51 seconds
+selectCodeEditor("smart_light_module.v", 90, 99); // ce (w, ck)
+selectCodeEditor("smart_light_module.v", 68, 180); // ce (w, ck)
+selectCodeEditor("smart_light_module.v", 181, 212); // ce (w, ck)
+// Elapsed time: 12 seconds
+typeControlKey(null, null, 'z');
+selectCodeEditor("smart_light_module.v", 294, 163); // ce (w, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,312 MB. GUI used memory: 58 MB. Current time: 4/29/22 2:00:41 PM IST
+// Elapsed time: 41 seconds
+selectCodeEditor("smart_light_module.v", 219, 213); // ce (w, ck)
+// Elapsed time: 18 seconds
+selectCodeEditor("smart_light_module.v", 224, 199); // ce (w, ck)
+// Elapsed time: 73 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("smart_light_module.v", 187, 78); // ce (w, ck)
+// Elapsed time: 67 seconds
+selectCodeEditor("smart_light_module.v", 92, 80); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 27 seconds
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12); // u (O, ck)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12); // u (O, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 15, false); // u (O, ck)
+// A (ck): Elaborate Design: addNotify
+selectCheckBox(RDIResource.MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", false); // g (Q, A): FALSE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (ck):  Open Elaborated Design : addNotify
+dismissDialog("Elaborate Design"); // A (ck)
+// TclEventType: ELABORATE_START
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7z020clg484-1 Top: smart_light_module 
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1177 ms. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 4789 ms. Increasing delay to 4000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,635 MB. GUI used memory: 56 MB. Current time: 4/29/22 2:04:38 PM IST
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 3410 ms. Increasing delay to 5000 ms.
+// [Engine Memory]: 1,635 MB (+286993kb) [01:35:51]
+// TclEventType: ELABORATE_FINISH
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,636 MB. GUI used memory: 56 MB. Current time: 4/29/22 2:05:03 PM IST
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// [Engine Memory]: 1,720 MB (+2901kb) [01:36:18]
+// Package: addNotify
+// Device: addNotify
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1627.207 ; gain = 113.180 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'smart_light_module' [C:/Users/SANJU/Desktop/smart_light/smart_light.srcs/sources_1/new/smart_light_module.v:3] INFO: [Synth 8-6157] synthesizing module 'clk_div' [C:/Users/SANJU/Desktop/smart_light/smart_light.srcs/sources_1/new/clk_div.v:3] 
+// Tcl Message: 	Parameter N bound to: 5 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'clk_div' (1#1) [C:/Users/SANJU/Desktop/smart_light/smart_light.srcs/sources_1/new/clk_div.v:3] INFO: [Synth 8-6157] synthesizing module 'spi_module' [C:/Users/SANJU/Desktop/smart_light/smart_light.srcs/sources_1/new/spi_module.v:3] INFO: [Synth 8-6155] done synthesizing module 'spi_module' (2#1) [C:/Users/SANJU/Desktop/smart_light/smart_light.srcs/sources_1/new/spi_module.v:3] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'vio_1' [C:/Users/SANJU/Desktop/smart_light/.Xil/Vivado-13064-DESKTOP-VJS2AA7/realtime/vio_1_stub.v:6] INFO: [Synth 8-6155] done synthesizing module 'vio_1' (3#1) [C:/Users/SANJU/Desktop/smart_light/.Xil/Vivado-13064-DESKTOP-VJS2AA7/realtime/vio_1_stub.v:6] 
+// Tcl Message: INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'spi2'. This will prevent further optimization [C:/Users/SANJU/Desktop/smart_light/smart_light.srcs/sources_1/new/smart_light_module.v:19] INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'vio3'. This will prevent further optimization [C:/Users/SANJU/Desktop/smart_light/smart_light.srcs/sources_1/new/smart_light_module.v:20] INFO: [Synth 8-6155] done synthesizing module 'smart_light_module' (4#1) [C:/Users/SANJU/Desktop/smart_light/smart_light.srcs/sources_1/new/smart_light_module.v:3] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1664.820 ; gain = 150.793 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1664.820 ; gain = 150.793 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1664.820 ; gain = 150.793 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Project 1-454] Reading design checkpoint 'c:/Users/SANJU/Desktop/smart_light/smart_light.srcs/sources_1/ip/vio_1/vio_1.dcp' for cell 'vio3' INFO: [Project 1-479] Netlist was created with Vivado 2018.2 INFO: [Device 21-403] Loading part xc7z020clg484-1 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers. 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Parsing XDC File [c:/Users/SANJU/Desktop/smart_light/smart_light.srcs/sources_1/ip/vio_1/vio_1.xdc] for cell 'vio3' Finished Parsing XDC File [c:/Users/SANJU/Desktop/smart_light/smart_light.srcs/sources_1/ip/vio_1/vio_1.xdc] for cell 'vio3' Parsing XDC File [C:/Users/SANJU/Desktop/smart_light/smart_light.srcs/constrs_1/new/smart_light.xdc] 
+// Tcl Message: Finished Parsing XDC File [C:/Users/SANJU/Desktop/smart_light/smart_light.srcs/constrs_1/new/smart_light.xdc] 
+// Tcl Message: Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:00:26 ; elapsed = 00:00:54 . Memory (MB): peak = 2055.051 ; gain = 541.023 
+// Tcl Message: 17 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:55 . Memory (MB): peak = 2055.051 ; gain = 542.176 
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+// Elapsed time: 56 seconds
+dismissDialog("Open Elaborated Design"); // bx (ck)
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "light_on (8) ; OUT ;  ;  ; true ; 33 ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 1); // z (O, ck)
+// Elapsed time: 25 seconds
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "Scalar ports (5) ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; ", 10); // z (O, ck)
+// [GUI Memory]: 136 MB (+6590kb) [01:36:54]
+// [GUI Memory]: 144 MB (+901kb) [01:37:42]
+// Elapsed time: 54 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 24, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 5 seconds
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// bx (ck):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Fri Apr 29 14:06:40 2022] Launched synth_1... Run output will be captured here: C:/Users/SANJU/Desktop/smart_light/smart_light.runs/synth_1/runme.log [Fri Apr 29 14:06:40 2022] Launched impl_1... Run output will be captured here: C:/Users/SANJU/Desktop/smart_light/smart_light.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 285 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 25, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+closeView(PAResourceOtoP.PAViews_DASHBOARD, "hw_vios"); // i
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248685779 
+// n (ck): Close Hardware Target: addNotify
+// WARNING: updateGUI() is taking  2142 ms.
+// TclEventType: HW_SERVER_UPDATE
+// Elapsed time: 10 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (ck)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Elapsed time: 14 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cM, ck)
+// PAPropertyPanels.initPanels (xc7z020_1) elapsed time: 0.2s
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+dismissDialog("Program Device"); // bB (ck)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {C:/Users/SANJU/Desktop/smart_light/smart_light.runs/impl_1/smart_light_module.ltx} [get_hw_devices xc7z020_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {C:/Users/SANJU/Desktop/smart_light/smart_light.runs/impl_1/smart_light_module.ltx} [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/SANJU/Desktop/smart_light/smart_light.runs/impl_1/smart_light_module.bit} [get_hw_devices xc7z020_1] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 VIO core(s). 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// 'I' command handler elapsed time: 7 seconds
+dismissDialog("Program Device"); // bx (ck)
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+expandTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "light_on_OBUF[7:0] ; [U] 255 ; HARDWARE_VIO_ACTIVITY_BOTH ; Input ; hw_vio_1", 1); // g (O, ck)
+// [GUI Memory]: 155 MB (+3679kb) [01:43:45]
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// Elapsed time: 229 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "edge_detector.v", 0); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spi_module.v", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "smart_light_module.v", 3); // k (j, ck)
+selectCodeEditor("smart_light_module.v", 532, 46); // ce (w, ck)
+// Elapsed time: 11 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// Elapsed time: 42 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// Elapsed time: 81 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hw_vios", 4); // k (j, ck)
+// Elapsed time: 76 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "smart_light_module.v", 3); // k (j, ck)
+selectCodeEditor("smart_light_module.v", 475, 190); // ce (w, ck)
+// Elapsed time: 11 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (ay, ck)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// A (ck): Confirm Close: addNotify
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// TclEventType: HW_OBJECT_DELETE
+dismissDialog("Confirm Close"); // A (ck)
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+closeView(PAResourceOtoP.PAViews_DASHBOARD, "hw_vios"); // i
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_SESSION_CLOSE
+// Tcl Message: close_hw 
+// bx (ck):  CLose Hardware Manager : addNotify
+dismissDialog("CLose Hardware Manager"); // bx (ck)
+// Elapsed time: 146 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "smart_light_module.v", 5); // k (j, ck)
+selectCodeEditor("smart_light_module.v", 585, 216); // ce (w, ck)
+// Elapsed time: 19 seconds
+selectCodeEditor("smart_light_module.v", 365, 144); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 584ms to process. Increasing delay to 3000 ms.
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 24, false); // u (O, ck)
+// TclEventType: DG_GRAPH_GENERATED
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 5 seconds
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// bx (ck):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Apr 29 14:23:48 2022] Launched synth_1... Run output will be captured here: C:/Users/SANJU/Desktop/smart_light/smart_light.runs/synth_1/runme.log [Fri Apr 29 14:23:49 2022] Launched impl_1... Run output will be captured here: C:/Users/SANJU/Desktop/smart_light/smart_light.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking 1005ms to process. Increasing delay to 6000 ms.
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 231ms to process. Increasing delay to 2000 ms.
+// Elapsed time: 77 seconds
+selectCodeEditor("smart_light_module.v", 548, 164); // ce (w, ck)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Elapsed time: 23 seconds
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // h (Q, ck)
+// aS (ck): Cancel Implementation: addNotify
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(PAResourceQtoS.StateMonitor_RESET_STEP, "Reset Step"); // a (aS)
+// bx (ck):  Reset to Previous Step : addNotify
+dismissDialog("Cancel Implementation"); // aS (ck)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run impl_1 -prev_step  
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Reset to Previous Step"); // bx (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 24, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+selectCheckBox(RDIResource.MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", false); // g (Q, A): FALSE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 4 seconds
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// bx (ck):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Fri Apr 29 14:25:40 2022] Launched synth_1... Run output will be captured here: C:/Users/SANJU/Desktop/smart_light/smart_light.runs/synth_1/runme.log [Fri Apr 29 14:25:41 2022] Launched impl_1... Run output will be captured here: C:/Users/SANJU/Desktop/smart_light/smart_light.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 205ms to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking 439ms to process. Increasing delay to 3000 ms.
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 204 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// bx (ck):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+dismissDialog("Open Hardware Manager"); // bx (ck)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cM, ck)
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_TARGET_WIZARD, "Open New Target..."); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_TARGET_WIZARD
+// aM (ck): Open New Hardware Target: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, aM)
+// bx (aM):  Open Server : addNotify
+// TclEventType: HW_SERVER_UPDATE
+selectButton("NEXT", "Next >"); // JButton (j, aM)
+dismissDialog("Open Server"); // bx (aM)
+selectButton("BACK", "< Back"); // JButton (j, aM)

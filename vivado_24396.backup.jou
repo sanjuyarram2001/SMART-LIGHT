@@ -1,0 +1,177 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat Dec 11 13:46:07 2021
+# Process ID: 24396
+# Current directory: D:/Academics/Sem 3-1/FPGA/project/smart_light
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3588 D:\Academics\Sem 3-1\FPGA\project\smart_light\smart_light.xpr
+# Log file: D:/Academics/Sem 3-1/FPGA/project/smart_light/vivado.log
+# Journal file: D:/Academics/Sem 3-1/FPGA/project/smart_light\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Academics/Sem 3-1/FPGA/project/smart_light/smart_light.xpr}
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+create_ip -name vio -vendor xilinx.com -library ip -version 3.0 -module_name vio_0 -dir {d:/Academics/Sem 3-1/FPGA/project/smart_light/smart_light.srcs/sources_1/ip}
+set_property -dict [list CONFIG.C_PROBE_IN0_WIDTH {8} CONFIG.C_NUM_PROBE_OUT {0}] [get_ips vio_0]
+generate_target {instantiation_template} [get_files {{d:/Academics/Sem 3-1/FPGA/project/smart_light/smart_light.srcs/sources_1/ip/vio_0/vio_0.xci}}]
+generate_target all [get_files  {{d:/Academics/Sem 3-1/FPGA/project/smart_light/smart_light.srcs/sources_1/ip/vio_0/vio_0.xci}}]
+catch { config_ip_cache -export [get_ips -all vio_0] }
+export_ip_user_files -of_objects [get_files {{d:/Academics/Sem 3-1/FPGA/project/smart_light/smart_light.srcs/sources_1/ip/vio_0/vio_0.xci}}] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{d:/Academics/Sem 3-1/FPGA/project/smart_light/smart_light.srcs/sources_1/ip/vio_0/vio_0.xci}}]
+launch_runs -jobs 6 vio_0_synth_1
+export_simulation -of_objects [get_files {{d:/Academics/Sem 3-1/FPGA/project/smart_light/smart_light.srcs/sources_1/ip/vio_0/vio_0.xci}}] -directory {D:/Academics/Sem 3-1/FPGA/project/smart_light/smart_light.ip_user_files/sim_scripts} -ip_user_files_dir {D:/Academics/Sem 3-1/FPGA/project/smart_light/smart_light.ip_user_files} -ipstatic_source_dir {D:/Academics/Sem 3-1/FPGA/project/smart_light/smart_light.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/Academics/Sem 3-1/FPGA/project/smart_light/smart_light.cache/compile_simlib/modelsim} {questa=D:/Academics/Sem 3-1/FPGA/project/smart_light/smart_light.cache/compile_simlib/questa} {riviera=D:/Academics/Sem 3-1/FPGA/project/smart_light/smart_light.cache/compile_simlib/riviera} {activehdl=D:/Academics/Sem 3-1/FPGA/project/smart_light/smart_light.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+synth_design -rtl -name rtl_1
+synth_design -rtl -name rtl_1
+set_property IOSTANDARD LVCMOS33 [get_ports [list clk]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list reset]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list switch]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list chip_select]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list clk_sensor]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list data_sensor]]
+place_ports clk Y9
+place_ports reset R18
+place_ports switch F22
+place_ports chip_select Y11
+place_ports clk_sensor AA9
+place_ports data_sensor Y10
+file mkdir {D:/Academics/Sem 3-1/FPGA/project/smart_light/smart_light.srcs/constrs_1/new}
+close [ open {D:/Academics/Sem 3-1/FPGA/project/smart_light/smart_light.srcs/constrs_1/new/smart_light.xdc} w ]
+add_files -fileset constrs_1 {{D:/Academics/Sem 3-1/FPGA/project/smart_light/smart_light.srcs/constrs_1/new/smart_light.xdc}}
+set_property target_constrs_file {D:/Academics/Sem 3-1/FPGA/project/smart_light/smart_light.srcs/constrs_1/new/smart_light.xdc} [current_fileset -constrset]
+save_constraints -force
+close_design
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210248493159]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210248493159]
+open_hw_target
+set_property PROGRAM.FILE {D:/Academics/Sem 3-1/FPGA/project/smart_light/smart_light.runs/impl_1/sensor_module.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {D:/Academics/Sem 3-1/FPGA/project/smart_light/smart_light.runs/impl_1/sensor_module.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {D:/Academics/Sem 3-1/FPGA/project/smart_light/smart_light.runs/impl_1/sensor_module.ltx} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {D:/Academics/Sem 3-1/FPGA/project/smart_light/smart_light.runs/impl_1/sensor_module.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {D:/Academics/Sem 3-1/FPGA/project/smart_light/smart_light.runs/impl_1/sensor_module.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/Academics/Sem 3-1/FPGA/project/smart_light/smart_light.runs/impl_1/sensor_module.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property INPUT_VALUE_RADIX UNSIGNED [get_hw_probes light -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"vio3"}]]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210248493159]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210248493159]
+open_hw_target
+set_property PROGRAM.FILE {D:/Academics/Sem 3-1/FPGA/project/smart_light/smart_light.runs/impl_1/sensor_module.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {D:/Academics/Sem 3-1/FPGA/project/smart_light/smart_light.runs/impl_1/sensor_module.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {D:/Academics/Sem 3-1/FPGA/project/smart_light/smart_light.runs/impl_1/sensor_module.ltx} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {D:/Academics/Sem 3-1/FPGA/project/smart_light/smart_light.runs/impl_1/sensor_module.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {D:/Academics/Sem 3-1/FPGA/project/smart_light/smart_light.runs/impl_1/sensor_module.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/Academics/Sem 3-1/FPGA/project/smart_light/smart_light.runs/impl_1/sensor_module.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+close_hw
+close [ open {D:/Academics/Sem 3-1/FPGA/project/smart_light/smart_light.srcs/sources_1/new/smart_light_module.v} w ]
+add_files {{D:/Academics/Sem 3-1/FPGA/project/smart_light/smart_light.srcs/sources_1/new/smart_light_module.v}}
+update_compile_order -fileset sources_1
+close [ open {D:/Academics/Sem 3-1/FPGA/project/smart_light/smart_light.srcs/sources_1/new/smart_light_main.v} w ]
+add_files {{D:/Academics/Sem 3-1/FPGA/project/smart_light/smart_light.srcs/sources_1/new/smart_light_main.v}}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+synth_design -rtl -name rtl_1
+close_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210248493159]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210248493159]
+open_hw_target
+set_property PROGRAM.FILE {D:/Academics/Sem 3-1/FPGA/project/smart_light/smart_light.runs/impl_1/sensor_module.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {D:/Academics/Sem 3-1/FPGA/project/smart_light/smart_light.runs/impl_1/sensor_module.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {D:/Academics/Sem 3-1/FPGA/project/smart_light/smart_light.runs/impl_1/sensor_module.ltx} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {D:/Academics/Sem 3-1/FPGA/project/smart_light/smart_light.runs/impl_1/sensor_module.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {D:/Academics/Sem 3-1/FPGA/project/smart_light/smart_light.runs/impl_1/sensor_module.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/Academics/Sem 3-1/FPGA/project/smart_light/smart_light.runs/impl_1/sensor_module.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property INPUT_VALUE_RADIX UNSIGNED [get_hw_probes light_intensity -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"vio3"}]]
+close_hw
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top smart_light_module [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+set_property IOSTANDARD LVCMOS33 [get_ports [list light_on]]
+place_ports light_on T22
+save_constraints
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210248493159]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210248493159]
+open_hw_target
+set_property PROGRAM.FILE {D:/Academics/Sem 3-1/FPGA/project/smart_light/smart_light.runs/impl_1/smart_light_module.bit} [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/Academics/Sem 3-1/FPGA/project/smart_light/smart_light.runs/impl_1/smart_light_module.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {D:/Academics/Sem 3-1/FPGA/project/smart_light/smart_light.runs/impl_1/smart_light_module.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {D:/Academics/Sem 3-1/FPGA/project/smart_light/smart_light.runs/impl_1/smart_light_module.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/Academics/Sem 3-1/FPGA/project/smart_light/smart_light.runs/impl_1/smart_light_module.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+close_hw
+refresh_design
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/Academics/Sem 3-1/FPGA/project/smart_light/smart_light.runs/impl_1/smart_light_module.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {D:/Academics/Sem 3-1/FPGA/project/smart_light/smart_light.runs/impl_1/smart_light_module.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {D:/Academics/Sem 3-1/FPGA/project/smart_light/smart_light.runs/impl_1/smart_light_module.ltx} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {D:/Academics/Sem 3-1/FPGA/project/smart_light/smart_light.runs/impl_1/smart_light_module.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {D:/Academics/Sem 3-1/FPGA/project/smart_light/smart_light.runs/impl_1/smart_light_module.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/Academics/Sem 3-1/FPGA/project/smart_light/smart_light.runs/impl_1/smart_light_module.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+close_hw
